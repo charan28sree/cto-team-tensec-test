@@ -1,0 +1,13 @@
+# WordPress
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-config.php
+
+# Composer
+vendor/
+wp-content/plugins/members/
+
+# OS generated files
+.DS_Store
+Thumbs.db
