@@ -1,0 +1,223 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.0/theme.json",
+  "version": 2,
+  "settings": {
+    "color": {
+      "defaultPalette": false,
+      "palette": [
+        {
+          "color": "#000000",
+          "name": "Black",
+          "slug": "black"
+        },
+        {
+          "color": "#00FF00",
+          "name": "Neon Green",
+          "slug": "neon-green"
+        },
+        {
+          "color": "#00CC00",
+          "name": "Matrix Green",
+          "slug": "matrix-green"
+        },
+        {
+          "color": "#00AA00",
+          "name": "Dark Green",
+          "slug": "dark-green"
+        },
+        {
+          "color": "#1A1A1A",
+          "name": "Dark Background",
+          "slug": "dark-bg"
+        },
+        {
+          "color": "#0D0D0D",
+          "name": "Darker Background",
+          "slug": "darker-bg"
+        },
+        {
+          "color": "#FFFFFF",
+          "name": "White",
+          "slug": "white"
+        },
+        {
+          "color": "#CCCCCC",
+          "name": "Light Gray",
+          "slug": "light-gray"
+        },
+        {
+          "color": "#00FF44",
+          "name": "Bright Green",
+          "slug": "bright-green"
+        },
+        {
+          "color": "#00DD00",
+          "name": "Vivid Green",
+          "slug": "vivid-green"
+        }
+      ],
+      "gradients": [
+        {
+          "gradient": "linear-gradient(135deg, #000000 0%, #00FF00 100%)",
+          "name": "Black to Neon Green",
+          "slug": "black-to-neon"
+        },
+        {
+          "gradient": "linear-gradient(90deg, #0D0D0D 0%, #1A1A1A 50%, #00CC00 100%)",
+          "name": "Dark to Matrix Green",
+          "slug": "dark-to-matrix"
+        },
+        {
+          "gradient": "linear-gradient(135deg, #000000 0%, #00AA00 50%, #00FF00 100%)",
+          "name": "Black through Greens",
+          "slug": "black-through-greens"
+        },
+        {
+          "gradient": "linear-gradient(180deg, #1A1A1A 0%, #0D0D0D 100%)",
+          "name": "Dark Subtle",
+          "slug": "dark-subtle"
+        }
+      ]
+    },
+    "typography": {
+      "defaultFontSizes": false,
+      "fontFamilies": [
+        {
+          "fontFamily": "\"OCR A\", \"Courier New\", monospace",
+          "name": "OCR A",
+          "slug": "ocr-a"
+        },
+        {
+          "fontFamily": "\"Courier New\", \"Courier\", monospace",
+          "name": "Courier",
+          "slug": "courier"
+        },
+        {
+          "fontFamily": "\"-apple-system\", \"BlinkMacSystemFont\", \"Segoe UI\", \"Roboto\", \"Oxygen-Sans\", \"Ubuntu\", \"Cantarell\", \"Helvetica Neue\", sans-serif",
+          "name": "System Sans",
+          "slug": "system-sans"
+        }
+      ],
+      "fontSizes": [
+        {
+          "size": "0.875rem",
+          "name": "Small",
+          "slug": "small"
+        },
+        {
+          "size": "1rem",
+          "name": "Base",
+          "slug": "base"
+        },
+        {
+          "size": "1.25rem",
+          "name": "Medium",
+          "slug": "medium"
+        },
+        {
+          "size": "1.5rem",
+          "name": "Large",
+          "slug": "large"
+        },
+        {
+          "size": "2rem",
+          "name": "XL",
+          "slug": "xl"
+        },
+        {
+          "size": "2.5rem",
+          "name": "XXL",
+          "slug": "xxl"
+        },
+        {
+          "size": "3rem",
+          "name": "XXXL",
+          "slug": "xxxl"
+        }
+      ]
+    },
+    "spacing": {
+      "units": ["%", "px", "em", "rem", "vw", "vh"]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#000000",
+      "text": "#00FF00"
+    },
+    "typography": {
+      "fontFamily": "\"Courier New\", \"Courier\", monospace",
+      "fontSize": "1rem"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "#00FF00"
+        },
+        ":hover": {
+          "color": {
+            "text": "#00CC00"
+          }
+        }
+      },
+      "heading": {
+        "color": {
+          "text": "#00FF00"
+        },
+        "typography": {
+          "fontFamily": "\"OCR A\", \"Courier New\", monospace",
+          "fontWeight": "bold"
+        }
+      }
+    },
+    "blocks": {
+      "core/button": {
+        "color": {
+          "background": "#00FF00",
+          "text": "#000000"
+        },
+        "border": {
+          "color": "#00FF00",
+          "style": "solid",
+          "width": "2px"
+        }
+      },
+      "core/heading": {
+        "color": {
+          "text": "#00FF00"
+        },
+        "typography": {
+          "fontFamily": "\"OCR A\", \"Courier New\", monospace"
+        }
+      },
+      "core/paragraph": {
+        "color": {
+          "text": "#CCCCCC"
+        }
+      },
+      "core/code": {
+        "color": {
+          "background": "#0D0D0D",
+          "text": "#00FF00"
+        },
+        "border": {
+          "color": "#00CC00",
+          "style": "solid",
+          "width": "1px"
+        }
+      }
+    }
+  },
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "Header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "area": "footer"
+    }
+  ]
+}

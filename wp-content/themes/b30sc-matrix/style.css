@@ -1,0 +1,298 @@
+/*
+Theme Name: B30SC Matrix
+Theme URI: https://b30sc.com/matrix
+Author: B30SC
+Author URI: https://b30sc.com
+Description: A custom WordPress block theme with a black/green cybersecurity aesthetic inspired by The Matrix.
+Version: 1.0.0
+License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: b30sc-matrix
+Domain Path: /languages
+Requires at least: 6.0
+Requires PHP: 7.4
+*/
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #000000;
+  color: #00FF00;
+  font-family: "Courier New", "Courier", monospace;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "OCR A", "Courier New", monospace;
+  color: #00FF00;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 1em 0 0.5em 0;
+}
+
+h1 {
+  font-size: 3rem;
+  text-shadow: 0 0 10px #00FF00, 0 0 20px #00CC00;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-shadow: 0 0 8px #00FF00;
+}
+
+h3 {
+  font-size: 2rem;
+  text-shadow: 0 0 6px #00FF00;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  color: #CCCCCC;
+  margin-bottom: 1em;
+}
+
+a {
+  color: #00FF00;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #00CC00;
+  text-shadow: 0 0 5px #00FF00;
+}
+
+/* Code Blocks */
+code,
+pre {
+  background-color: #0D0D0D;
+  border: 1px solid #00CC00;
+  border-radius: 4px;
+  padding: 8px;
+  color: #00FF00;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+}
+
+pre {
+  padding: 16px;
+  overflow-x: auto;
+  box-shadow: inset 0 0 10px rgba(0, 255, 0, 0.1);
+}
+
+/* Buttons */
+.wp-block-button__link,
+button,
+input[type="button"],
+input[type="submit"] {
+  background-color: #00FF00;
+  color: #000000;
+  border: 2px solid #00FF00;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "OCR A", "Courier New", monospace;
+  border-radius: 2px;
+}
+
+.wp-block-button__link:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background-color: #00CC00;
+  box-shadow: 0 0 10px #00FF00, inset 0 0 5px rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* Matrix Background Effect */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(0, 255, 0, 0.03) 0,
+    rgba(0, 255, 0, 0.03) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: -1;
+  animation: flicker 0.15s infinite;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.97;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.97;
+  }
+}
+
+/* Neon glow effect for headings */
+.wp-block-heading h1,
+.wp-block-heading h2,
+.wp-block-heading h3 {
+  text-shadow: 0 0 5px #00FF00, 0 0 10px #00CC00, 0 0 15px #00AA00;
+}
+
+/* Section Backgrounds */
+.wp-block-group {
+  background-color: rgba(13, 13, 13, 0.5);
+  border-left: 3px solid #00FF00;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+textarea,
+select {
+  background-color: #1A1A1A;
+  color: #00FF00;
+  border: 1px solid #00CC00;
+  padding: 10px;
+  border-radius: 2px;
+  font-family: "Courier New", monospace;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #00FF00;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border: 1px solid #00CC00;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #00AA00;
+  text-align: left;
+}
+
+th {
+  background-color: #1A1A1A;
+  color: #00FF00;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+tr:hover {
+  background-color: rgba(0, 255, 0, 0.05);
+}
+
+/* Navigation */
+nav {
+  background-color: rgba(13, 13, 13, 0.8);
+  border-bottom: 2px solid #00FF00;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #00FF00;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+nav a:hover {
+  background-color: rgba(0, 255, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+/* Cards */
+.wp-block-columns .wp-block-column {
+  border-left: 3px solid #00FF00;
+  padding: 20px;
+  background-color: rgba(13, 13, 13, 0.5);
+  transition: all 0.3s ease;
+}
+
+.wp-block-columns .wp-block-column:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Print styles */
+@media print {
+  body::before {
+    display: none;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

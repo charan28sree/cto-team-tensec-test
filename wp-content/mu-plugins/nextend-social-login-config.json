@@ -1,0 +1,114 @@
+{
+  "_meta": {
+    "description": "Nextend Social Login configuration scaffolding for B30SC Matrix theme",
+    "version": "1.0.0",
+    "created": "2024-12-12",
+    "note": "This is a configuration template. Actual credentials should be set via wp-config.php constants or environment variables."
+  },
+  "providers": {
+    "google": {
+      "enabled": true,
+      "settings": {
+        "client_id": "SET_VIA_B30SC_GOOGLE_CLIENT_ID_CONSTANT",
+        "client_secret": "SET_VIA_B30SC_GOOGLE_CLIENT_SECRET_CONSTANT",
+        "button_style": "icon",
+        "button_text": "Continue with Google",
+        "button_align": "center",
+        "display_on": [
+          "login",
+          "register"
+        ],
+        "redirect_after_login": "auto",
+        "redirect_after_register": "auto",
+        "user_prefix": "",
+        "user_fallback": "username_fallback",
+        "role": "subscriber",
+        "avatar": "google",
+        "store_access_token": false,
+        "scopes": [
+          "profile",
+          "email"
+        ]
+      },
+      "callback_url": "YOUR_SITE_URL/wp-login.php?loginSocial=google",
+      "alternate_callback_urls": [
+        "YOUR_SITE_URL/?loginSocial=google",
+        "YOUR_SITE_URL/login/?loginSocial=google"
+      ]
+    },
+    "github": {
+      "enabled": true,
+      "settings": {
+        "client_id": "SET_VIA_B30SC_GITHUB_CLIENT_ID_CONSTANT",
+        "client_secret": "SET_VIA_B30SC_GITHUB_CLIENT_SECRET_CONSTANT",
+        "button_style": "icon",
+        "button_text": "Continue with GitHub",
+        "button_align": "center",
+        "display_on": [
+          "login",
+          "register"
+        ],
+        "redirect_after_login": "auto",
+        "redirect_after_register": "auto",
+        "user_prefix": "",
+        "user_fallback": "username_fallback",
+        "role": "subscriber",
+        "avatar": "github",
+        "store_access_token": false,
+        "scopes": [
+          "user:email"
+        ]
+      },
+      "callback_url": "YOUR_SITE_URL/wp-login.php?loginSocial=github",
+      "alternate_callback_urls": [
+        "YOUR_SITE_URL/?loginSocial=github",
+        "YOUR_SITE_URL/login/?loginSocial=github"
+      ]
+    }
+  },
+  "general_settings": {
+    "disabled_for_logged_in": true,
+    "login_form_enabled": true,
+    "register_form_enabled": true,
+    "comment_form_enabled": false,
+    "woocommerce_enabled": false,
+    "buddypress_enabled": false,
+    "membership_enabled": false
+  },
+  "styling": {
+    "theme": "matrix",
+    "custom_css_enabled": true,
+    "custom_css": ".nsl-button { background-color: #1A1A1A !important; border: 1px solid #00CC00 !important; color: #00FF00 !important; }",
+    "button_width": "full",
+    "button_height": "medium",
+    "button_spacing": "10px"
+  },
+  "security": {
+    "allowed_roles": [
+      "subscriber",
+      "contributor"
+    ],
+    "block_domains": [],
+    "require_verified_email": false,
+    "enable_registration": true,
+    "enable_login": true
+  },
+  "instructions": {
+    "setup_steps": [
+      "1. Install Nextend Social Login plugin from WordPress.org",
+      "2. Set OAuth credentials in wp-config.php using provided constants",
+      "3. Navigate to Settings > Nextend Social Login in WordPress admin",
+      "4. Enable Google and GitHub providers",
+      "5. Configure callback URLs in Google Cloud Console and GitHub",
+      "6. Test login functionality",
+      "7. Refer to OAUTH_SETUP.md for detailed instructions"
+    ],
+    "wp_config_constants": [
+      "B30SC_GOOGLE_CLIENT_ID",
+      "B30SC_GOOGLE_CLIENT_SECRET",
+      "B30SC_GITHUB_CLIENT_ID",
+      "B30SC_GITHUB_CLIENT_SECRET"
+    ],
+    "documentation": "See OAUTH_SETUP.md in the project root for complete setup instructions"
+  }
+}
