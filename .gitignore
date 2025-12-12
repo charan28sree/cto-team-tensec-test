@@ -1,0 +1,50 @@
+# WordPress
+wp-config.php
+wp-config-local.php
+wp-content/uploads/
+wp-content/plugins/*/
+wp-content/themes/*/
+!wp-content/themes/b30sc-matrix/
+wp-content/cache/
+wp-content/backup/
+wp-content/upgrade/
+
+# IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+.env
+.env.local
+.env.*.local
+
+# Node
+node_modules/
+package-lock.json
+yarn.lock
+dist/
+build/
+
+# PHP
+vendor/
+composer.lock
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*~
+.sass-cache/
+.grunt/
+.nyc_output/
+coverage/
+
+# OS
+Thumbs.db
+.AppleDouble
+.LSOverride
+._*

@@ -1,0 +1,60 @@
+B30SC Matrix Theme - Visual Reference
+
+The B30SC Matrix theme features a distinctive cybersecurity-inspired aesthetic with the following visual characteristics:
+
+COLOR SCHEME:
+- Primary Background: Pure Black (#000000)
+- Primary Accent: Neon Green (#00FF00) - bright, glowing appearance
+- Secondary Accent: Matrix Green (#00CC00) - medium intensity green
+- Tertiary Accent: Dark Green (#00AA00) - subtle green
+- Secondary Backgrounds: #1A1A1A (dark), #0D0D0D (darker)
+- Text Colors: #CCCCCC (body), #FFFFFF (bright), #00FF00 (headings/links)
+
+VISUAL EFFECTS:
+- Neon Glow: Text shadows on headings creating glowing effect
+  - h1: 0 0 10px #00FF00, 0 0 20px #00CC00
+  - h2: 0 0 8px #00FF00
+  - h3: 0 0 6px #00FF00
+
+- Scanline Animation: Background animation simulating CRT/terminal effect
+  - Horizontal lines at 4px intervals with opacity variation
+  - Continuous flicker at 0.15s interval
+
+- Green Borders: Accent elements with left/top/bottom green borders
+  - Columns, cards, sections have 3px or 2px green left borders
+  - Headers/footers have green borders for separation
+
+- Hover Effects: Interactive elements respond with glow and scale
+  - Links: glow with text-shadow, color transition
+  - Buttons: scale up to 1.05, enhanced box-shadow
+  - Cards: slight upward translation, glow effect
+
+TYPOGRAPHY:
+- Headings: "OCR A" (or Courier New fallback) - monospace, technical look
+- Body Text: "Courier New" monospace - maintains code-like aesthetic
+- All headings: uppercase with letter-spacing 0.05em for technical feel
+
+LAYOUT:
+- Full-width sections with dark backgrounds
+- Columns with green accent borders
+- Code blocks with dark backgrounds and green borders
+- Responsive design with mobile breakpoints at 768px
+- Padded sections (20px-60px) creating breathing room
+
+COMPONENTS:
+- Hero Section: Large header with dual button styles
+- Services Section: Three-column layout with green borders
+- Features Section: Four-column feature blocks
+- CTA Section: Call-to-action with split layout
+- Navigation: Dark header with green bottom border
+- Footer: Three-column dark footer with green top border
+- Blog Archive: List layout with green accents
+- Single Post: Full-width post content with metadata
+
+BUTTONS:
+- Primary: Neon green background, black text, green border
+- Outline: Transparent background, neon green text and border
+- Hover: Darker green background, enhanced glow, slight scale increase
+
+This theme creates a distinctive "hacker/cybersecurity" aesthetic reminiscent of
+The Matrix movie, with modern WordPress block editor functionality.

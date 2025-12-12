@@ -1,0 +1,64 @@
+/* Editor-specific styles for Matrix theme */
+
+.editor-styles-wrapper {
+  background-color: #000000;
+  color: #00FF00;
+  font-family: "Courier New", "Courier", monospace;
+}
+
+.wp-block {
+  background-color: rgba(13, 13, 13, 0.5);
+  border-left: 3px solid #00FF00;
+}
+
+.wp-block-heading h1,
+.wp-block-heading h2,
+.wp-block-heading h3,
+.wp-block-heading h4,
+.wp-block-heading h5,
+.wp-block-heading h6 {
+  color: #00FF00;
+  font-family: "OCR A", "Courier New", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.wp-block-paragraph {
+  color: #CCCCCC;
+}
+
+.wp-block-code {
+  background-color: #0D0D0D;
+  border: 1px solid #00CC00;
+  color: #00FF00;
+}
+
+.wp-block-button__link {
+  background-color: #00FF00;
+  color: #000000;
+  border: 2px solid #00FF00;
+}
+
+.wp-block-quote {
+  border-left: 4px solid #00FF00;
+  color: #CCCCCC;
+}
+
+.wp-block-table {
+  border-color: #00CC00;
+}
+
+.wp-block-table th {
+  background-color: #1A1A1A;
+  color: #00FF00;
+  border-color: #00CC00;
+}
+
+.wp-block-table td {
+  border-color: #00AA00;
+}
+
+.wp-block-columns .wp-block-column {
+  border-left: 3px solid #00FF00;
+  background-color: rgba(13, 13, 13, 0.5);
+}
