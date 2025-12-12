@@ -1,10 +1,12 @@
 # WordPress
 wp-config.php
 wp-config-local.php
+wp-config-oauth.php
 wp-content/uploads/
 wp-content/plugins/*/
 wp-content/themes/*/
 !wp-content/themes/b30sc-matrix/
+!wp-content/mu-plugins/
 wp-content/cache/
 wp-content/backup/
 wp-content/upgrade/
