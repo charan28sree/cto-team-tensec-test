@@ -1,0 +1,13 @@
+{
+  "name": "engine/blog-protection",
+  "description": "Project dependencies for blog protection",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "wpackagist-plugin/members": "^3.2"
+  }
+}
